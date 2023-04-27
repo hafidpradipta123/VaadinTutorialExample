@@ -33,12 +33,15 @@ import com.vaadin.flow.theme.lumo.LumoUtility.MaxWidth;
 import com.vaadin.flow.theme.lumo.LumoUtility.Padding;
 import com.vaadin.flow.theme.lumo.LumoUtility.Position;
 import com.vaadin.flow.theme.lumo.LumoUtility.TextColor;
+import jakarta.annotation.security.PermitAll;
+
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
 @PageTitle("Checkout Form")
 @Route(value = "checkout-form", layout = MainLayout.class)
+@PermitAll
 public class CheckoutFormView extends Div {
 
     private static final Set<String> states = new LinkedHashSet<>();

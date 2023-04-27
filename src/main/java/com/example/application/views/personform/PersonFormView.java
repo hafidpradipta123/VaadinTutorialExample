@@ -21,10 +21,12 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.binder.Binder;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+import jakarta.annotation.security.PermitAll;
 
 @PageTitle("Person Form")
 @Route(value = "person-form", layout = MainLayout.class)
 @Uses(Icon.class)
+@PermitAll
 public class PersonFormView extends Div {
 
     private TextField firstName = new TextField("First name");
